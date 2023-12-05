@@ -1,5 +1,11 @@
-- pipe: 'analytics_hits'  # regular expression that selects two pipes
+- pipe: '*analytics_hits*'  # regular expression that selects two pipes
   tests:  # list of tests to run for this pipe
     - coverage:  # testing strategy to use (coverage, last, or manual)
+        config:  # configuration options for this strategy
+          skip: True  # whether the test should be skipped, use it to skip individual pipe tests
+    - last:  # testing strategy to use (coverage, last, or manual)
+        config:  # configuration options for this strategy
+          skip: True  # whether the test should be skipped, use it to skip individual pipe tests
+    - manual:  # testing strategy to use (coverage, last, or manual)
         config:  # configuration options for this strategy
           skip: True  # whether the test should be skipped, use it to skip individual pipe tests
