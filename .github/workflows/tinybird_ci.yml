@@ -18,7 +18,7 @@
 
     jobs:
         ci: # ci using environments from workspace 'wa_sk_2'
-          uses: tinybirdco/ci/.github/workflows/ci.yml@main
+          uses: tinybirdco/ci/.github/workflows/ci.yml@regression-config-file-support
           with:
             data_project_dir: .
           secrets:

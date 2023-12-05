@@ -1,0 +1,19 @@
+- pipe: '.*'
+  tests:
+    - coverage:
+        config:
+          assert_result: True
+          assert_result_no_error: True
+          assert_result_rows_count: True
+          assert_result_ignore_order: False
+          assert_time_increase_percentage: 25
+          assert_bytes_read_increase_percentage: 25
+          assert_max_time: 1
+          skip: False
+          failfast: False
+- pipe: '(analytics_hits|trend)' # regex
+  tests:
+    - coverage:
+        config:
+          skip: True
+
