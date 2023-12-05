@@ -1,5 +1,5 @@
 - pipe: '[analytics_hits|trend]'  # regular expression that selects two pipes
   tests:  # list of tests to run for this pipe
-    - [coverage|last|manual]:  # testing strategy to use (coverage, last, or manual)
+    - coverage:  # testing strategy to use (coverage, last, or manual)
       config:  # configuration options for this strategy
         skip: bool = True  # whether the test should be skipped, use it to skip individual pipe tests
