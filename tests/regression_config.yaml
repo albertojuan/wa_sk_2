@@ -1,4 +1,4 @@
-- pipe: '*analytics_hits*'  # regular expression that selects two pipes
+- pipe: 'analytics_hits'  # regular expression that selects two pipes
   tests:  # list of tests to run for this pipe
     - coverage:  # testing strategy to use (coverage, last, or manual)
         config:  # configuration options for this strategy
