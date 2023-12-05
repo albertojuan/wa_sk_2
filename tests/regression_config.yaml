@@ -11,8 +11,9 @@
           assert_max_time: 1
           skip: False
           failfast: False
-- pipe: '[analytics_hits|trends]'
+- pipe: '(analytics_hits|trend)' # regex
   tests:
     - coverage:
         config:
           skip: True
+
